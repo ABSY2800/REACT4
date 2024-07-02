@@ -2,31 +2,26 @@
   text-align: center;
 }
 
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
 .movie-card {
-  border: 1px solid #ddd;
+  border: 1px solid #ccc;
+  padding: 20px;
   margin: 10px;
-  padding: 10px;
+  border-radius: 10px;
   width: 200px;
-  display: inline-block;
-  vertical-align: top;
+  text-align: center;
+  transition: transform 0.2s;
 }
 
-.movie-card img {
-  width: 100%;
-  height: auto;
+.movie-card:hover {
+  transform: scale(1.05);
 }
 
-.filter {
-  margin-bottom: 20px;
-}
-
-.filter input {
-  margin: 5px;
-  padding: 5px;
-  width: calc(100% - 20px);
-}
-
-.filter button {
-  margin-top: 10px;
-  padding: 10px 20px;
+.trailer {
+  margin: 20px 0;
 }
